@@ -37,7 +37,7 @@ class HttpCall2API {
         String inline = null;
         Scanner sc = new Scanner(url.openStream());
         // get content into lines
-        while (sc.hasNext()) inline = sc.nextLine();
+        while (sc.hasNext()) inline += sc.nextLine();
         sc.close();
         return inline;
 
